@@ -54,7 +54,7 @@ public class PersistentAccountDAO  implements AccountDAO {
         SQLiteDatabase db = dbhelper.getWritableDatabase();
         String query = "SELECT * FROM Account where accountNo="+accountNo+" ;";
         Cursor data = db.rawQuery(query, null);
-        Account acc;
+        Account acc = null;
         while(data.moveToNext()){
             String accountNo2 = data.getString(data.getColumnIndex("accountNo"));
             String accountHolderName = data.getString(data.getColumnIndex("accountHolderName"));

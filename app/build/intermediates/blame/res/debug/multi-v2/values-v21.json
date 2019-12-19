@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\SimpleExpenseManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "E:\\Softwares\\Programming\\Projects\\AndroidStudio\\SimpleExpenseManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Wrecker97\\.gradle\\caches\\transforms-2\\files-2.1\\26df0f8813a13404e327c780b3b81904\\support-media-compat-26.1.0\\res\\values-v21\\values-v21.xml",
@@ -23,6 +23,25 @@
                     }
                 },
                 {
+                    "source": "E:\\Softwares\\Programming\\Projects\\AndroidStudio\\SimpleExpenseManager\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "18",
+                        "startColumns": "4",
+                        "startOffsets": "704",
+                        "endLines": "23",
+                        "endColumns": "12",
+                        "endOffsets": "1000"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "354",
+                        "endLines": "11",
+                        "endColumns": "12",
+                        "endOffsets": "650"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Wrecker97\\.gradle\\caches\\transforms-2\\files-2.1\\19640d657814c0deaea3c9f8ce878766\\support-compat-26.1.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
@@ -39,25 +58,6 @@
                         "endLines": "2,3,4,5,289,290,297,301,307,312",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
                         "endOffsets": "154,218,285,349,21171,21297,21754,22050,22389,22727"
-                    }
-                },
-                {
-                    "source": "D:\\SimpleExpenseManager\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "18",
-                        "startColumns": "4",
-                        "startOffsets": "704",
-                        "endLines": "23",
-                        "endColumns": "12",
-                        "endOffsets": "1000"
-                    },
-                    "to": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "354",
-                        "endLines": "11",
-                        "endColumns": "12",
-                        "endOffsets": "650"
                     }
                 },
                 {

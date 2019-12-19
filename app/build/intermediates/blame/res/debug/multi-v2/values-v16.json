@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\SimpleExpenseManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "E:\\Softwares\\Programming\\Projects\\AndroidStudio\\SimpleExpenseManager\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Wrecker97\\.gradle\\caches\\transforms-2\\files-2.1\\19640d657814c0deaea3c9f8ce878766\\support-compat-26.1.0\\res\\values-v16\\values-v16.xml",
