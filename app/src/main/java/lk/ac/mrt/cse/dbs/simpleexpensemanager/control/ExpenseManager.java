@@ -28,6 +28,7 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountExcep
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
+import android.database.sqlite.SQLiteDatabase;
 
 /**
  * The ExpenseManager acts as the mediator when performing transactions. This is an abstract class with an abstract
