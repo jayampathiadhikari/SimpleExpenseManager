@@ -19,14 +19,16 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 public class DBHelper extends SQLiteOpenHelper {
 
     public DBHelper(Context cont){
-        super(cont,"DATABASE_NAME",null,1);
+        super(cont,"170016U",null,1);
         SQLiteDatabase db = this.getWritableDatabase();
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE IF NOT EXISTS account_table (account_no TEXT(12) PRIMARY KEY, bank TEXT(50), account_holder TEXT(50), balance REAL)");
-        db.execSQL("CREATE TABLE IF NOT EXISTS transaction_table (date DATE, account_no TEXT(12), type TEXT(20), amount REAL, FOREIGN KEY (account_no) REFERENCES account_table (account_no))");
+        String createTable1 = "CREATE TABLE IF NOT EXISTS account_table (account_no TEXT(12) PRIMARY KEY, bank TEXT(50), account_holder TEXT(50), balance REAL)";
+        db.execSQL(createTable1);
+        String createTable2 = "CREATE TABLE IF NOT EXISTS transaction_table (date DATE, account_no TEXT(12), type TEXT(20), amount REAL, FOREIGN KEY (account_no) REFERENCES account_table (account_no))";
+        db.execSQL(createTable2);
     }
 
     @Override
@@ -72,12 +74,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public boolean update_account(Account acc){
-        /*if(type == "Expense") {
-            acc.setBalance(acc.getBalance() - amount);
-        }
-        else{
-            acc.setBalance(acc.getBalance() + amount);
-        }*/
+
         ContentValues cont_values = new ContentValues();
         cont_values.put("balance", acc.getBalance());
 
@@ -154,24 +151,6 @@ public class DBHelper extends SQLiteOpenHelper {
         else{
             return transactions;
         }
-        /*SQLiteDatabase db = this.getWritableDatabase();
 
-        Cursor c1 = db.rawQuery("SELECT * FROM transaction_table LIMIT " +limit, null);
-        if (c1.getCount() != 0){
-            Date date = new Date();
-            while(c1.moveToNext()){
-                try {
-                    date = new SimpleDateFormat("dd/MM/yyyy").parse(c1.getString(0));
-                } catch (ParseException e) {
-                    e.printStackTrace();
-                }
-                String acc_no = c1.getString(1);
-                ExpenseType type = ExpenseType.valueOf(c1.getString(2));
-                double amount = c1.getDouble(3);
-                Transaction tr = new Transaction(date, acc_no, type, amount);
-                transactions.add(tr);
-            }
-        }*/
-//        return transactions;
     }
 }
